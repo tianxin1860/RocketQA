@@ -69,7 +69,7 @@ def main():
     print('loading index')
     engine = faiss.read_index("output/para.index.part%s" % part)
     print('search in index')
-    emb_file = 'output/query_embedding.npy'
+    emb_file = 'output/dev.q.format.npy'
     search(engine, emb_file, qid_list, outfile, topk)
  
 if __name__ == "__main__":
